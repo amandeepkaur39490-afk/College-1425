@@ -1,0 +1,6 @@
+{
+  "name": "SDSPM College for Women Management System",
+  "description": "Shaheed Darshan Singh Pheruman Memorial College for Women (Rayya, Amritsar) Management System with Student Portal, Admin CMS, and Official Website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

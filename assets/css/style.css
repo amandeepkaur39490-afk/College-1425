@@ -1,0 +1,221 @@
+/**
+ * SDSPM College Management System - Unified Stylesheet (style.css)
+ * Shaheed Darshan Singh Pheruman Memorial College, Rayya
+ */
+
+:root {
+  --sd-navy: #0e2a47;
+  --sd-navy-dark: #081a2d;
+  --sd-navy-light: #183c66;
+  --sd-gold: #c59323;
+  --sd-gold-light: #dfaa3b;
+  --sd-maroon: #7a1c1d;
+  --sd-bg-light: #f8fafc;
+  --sd-text-dark: #1e293b;
+  --sd-text-muted: #64748b;
+  --sd-border: #e2e8f0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--sd-text-dark);
+  background-color: var(--sd-bg-light);
+  line-height: 1.6;
+}
+
+/* Institutional Headings */
+h1, h2, h3, .college-brand-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--sd-navy);
+}
+
+.serif-sub {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+}
+
+/* Top Utility Bar */
+.top-bar-utility {
+  background-color: var(--sd-navy-dark);
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--sd-gold);
+}
+
+.top-bar-utility a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.top-bar-utility a:hover {
+  color: var(--sd-gold);
+}
+
+/* Main Navbar */
+.navbar-sdspm {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(14, 42, 71, 0.06);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--sd-border);
+}
+
+.navbar-sdspm .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.college-logo-badge {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--sd-navy), var(--sd-navy-dark));
+  color: var(--sd-gold);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: 1px solid var(--sd-gold);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #334155 !important;
+  padding: 8px 14px !important;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--sd-navy) !important;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-college-primary {
+  background-color: var(--sd-navy);
+  color: #ffffff;
+  border: 1px solid var(--sd-navy);
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-college-primary:hover {
+  background-color: var(--sd-navy-light);
+  color: #ffffff;
+  border-color: var(--sd-navy-light);
+}
+
+.btn-college-gold {
+  background-color: var(--sd-gold);
+  color: #ffffff;
+  border: 1px solid var(--sd-gold);
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+.btn-college-gold:hover {
+  background-color: var(--sd-gold-light);
+  color: #ffffff;
+}
+
+.btn-college-outline {
+  border: 1.5px solid var(--sd-navy);
+  color: var(--sd-navy);
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.btn-college-outline:hover {
+  background-color: var(--sd-navy);
+  color: #ffffff;
+}
+
+/* Cards & Sections */
+.card-college {
+  background: #ffffff;
+  border: 1px solid var(--sd-border);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.card-college:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.notice-ribbon {
+  background: #f1f5f9;
+  border-left: 4px solid var(--sd-gold);
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Dashboard Sidebar */
+.dashboard-sidebar {
+  background: #ffffff;
+  border: 1px solid var(--sd-border);
+  border-radius: 8px;
+  min-height: calc(100vh - 180px);
+}
+
+.dashboard-sidebar a {
+  display: block;
+  padding: 12px 18px;
+  color: #475569;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.dashboard-sidebar a:hover, .dashboard-sidebar a.active {
+  background-color: #f8fafc;
+  color: var(--sd-navy);
+  font-weight: 600;
+  border-left: 3px solid var(--sd-navy);
+}
+
+/* Footer */
+.footer-sdspm {
+  background-color: var(--sd-navy-dark);
+  color: #cbd5e1;
+  padding: 48px 0 20px;
+  border-top: 3px solid var(--sd-gold);
+}
+
+.footer-sdspm h5 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.footer-sdspm a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-sdspm a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 36px;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
